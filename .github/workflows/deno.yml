@@ -1,0 +1,23 @@
+name: Auto Purge jsDelivr Cache
+
+# 当 main 分支有代码推送（更改文件）时触发
+on:
+  push:
+    branches:
+      - main  # 如果你的默认分支是 master，请改为 master
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr CDN
+        run: |
+          # 请修改下方的 用户名、仓库名 以及具体的 文件路径
+          # 如果有多个文件，可以写多行 curl
+          
+          echo "正在清理 jsDelivr 缓存..."
+          
+          # 清理 main 分支的具体文件
+          curl -i purge.jsdelivr.net/gh/Change-BUG/ScriptCollection@main/M3U8地址获取器.js
+          
+          echo "清理请求已发送。"
