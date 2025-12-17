@@ -7,6 +7,8 @@
 // @match        *://*/*
 // @grant        GM_addStyle
 // @grant        GM_setClipboard
+// @updateURL    https://cdn.jsdelivr.net/gh/Change-BUG/ScriptCollection@main/M3U8%E5%9C%B0%E5%9D%80%E8%8E%B7%E5%8F%96%E5%99%A8.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/Change-BUG/ScriptCollection@main/M3U8%E5%9C%B0%E5%9D%80%E8%8E%B7%E5%8F%96%E5%99%A8.js
 // @license      MIT
 // ==/UserScript==
 
