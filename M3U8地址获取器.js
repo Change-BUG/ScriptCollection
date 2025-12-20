@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         视频流地址获取器
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1005
 // @description  检测并获取网页中的m3u8视频流地址
 // @author       ChangeBUG
 // @match        *://*/*
@@ -149,6 +149,7 @@
 
                 let title = url.split('/');
                 title = title[title.length - 1];
+                title = title.split('?')[0]
 
                 // copyButton.textContent = '复制地址';
                 // copyButton.addEventListener('click', () => {
