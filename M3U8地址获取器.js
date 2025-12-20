@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         视频流地址获取器
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1001
+// @version      1.0.1002
 // @description  检测并获取网页中的m3u8视频流地址
 // @author       ChangeBUG
 // @match        *://*/*
@@ -165,7 +165,7 @@
                 copyButton.addEventListener('click',async () => {
 
                     // 发给本地服务 存储到数据库
-                    const response2 = await fetch(`http://192.168.2.250:12345/api/m3u8`, {
+                    const response2 = await fetch(`http://192.168.2.250:12345/api/v1/m3u8`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({"m3u8Url": url, "title": title})
